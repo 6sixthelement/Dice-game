@@ -1,0 +1,8 @@
+import random
+
+roll_dice = "y"
+
+while roll_dice == "yes" or roll_dice == "y":
+   print("Rolling the dice")
+   print(random.randint(1,6))
+   roll_dice = input("Roll the dice again?")
