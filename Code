@@ -1,0 +1,14 @@
+from tkinter import *
+import random
+
+a = Tk()
+
+a.title('Dice game')
+
+button = Button(text='Roll the dice', width=30, height=15)
+button.pack()
+T = Text(a, width = 10)
+T.pack()
+T.insert(END, random.randint(1, 6))
+
+mainloop()
